@@ -5,7 +5,7 @@ const src  = path.resolve(__dirname, 'src')
 const dist = path.resolve(__dirname, 'dist')
 
 export default {
-  entry: path.resolve(src,'index.jsx'),
+  entry: path.resolve(src, 'index.jsx'),
 
   output: {
     path: dist,
@@ -20,10 +20,6 @@ export default {
         loader: 'babel-loader'
       }
     ]
-  },
-
-  resolve: {
-    extensions: ['*', '.js']
   },
 
   plugins: [
